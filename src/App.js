@@ -106,24 +106,24 @@ const App = () => {
   return (
    <div className="bg-gray-900 min-h-screen text-white  justify-center items-center">
    
-      <div className="container mx-auto py-2 flex flex-col items-center">
-         <h1 className="text-3xl mt-8 text-center">ID Card Optical Character Recognition</h1>
-          <div className="flex flex-wrap w-full justify-center">
-              <div className="w-full md:w-1/2 mb-0 md:mb-0 md:pr-2">
-                    <FileUpload handleFileUpload={handleFileUpload} />
-              </div>
+            <div className="container mx-auto py-2 flex flex-col items-center">
+              <h1 className="text-3xl mt-8 text-center">ID Card Optical Character Recognition</h1>
+                <div className="flex flex-wrap w-full justify-center">
+                    <div className="w-full md:w-1/2 mb-0 md:mb-0 md:pr-2">
+                          <FileUpload handleFileUpload={handleFileUpload} />
+                    </div>
 
-              
-              <div className="w-full md:w-1/2 md:pl-2">
-                <OutputDisplay jsonData={jsonData} />
-              </div>
                     
-        
-          </div>
+                    <div className="w-full md:w-1/2 md:pl-2">
+                      <OutputDisplay jsonData={jsonData} />
+                    </div>
+                          
+              
+                </div>
 
-          <OcrHistory/>
+                <OcrHistory/>
 
-      </div>
+            </div>
 
 
     </div>
