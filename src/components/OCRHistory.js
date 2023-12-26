@@ -8,7 +8,7 @@ const OcrHistory = () => {
 
  const fetchData=()=>{
   // Fetch user data from your API endpoint
-    axios.get(`http://localhost:${PORT}/getUsers`)
+    axios.get(`https://ocr-backend-kx3u.onrender.com/getUsers`)
       .then(response => setUserData(response.data))
       .catch(error => console.error('Error fetching user data:', error));
  }

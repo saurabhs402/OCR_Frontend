@@ -49,7 +49,7 @@ const App = () => {
 
   try{
    // Sending request to server
-   res=await axios.post(`http://localhost:${PORT}/users`,{
+   res=await axios.post(`https://ocr-backend-kx3u.onrender.com/users`,{
     headers: {
         'Content-Type': 'application/json',
       },
